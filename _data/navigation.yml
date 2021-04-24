@@ -1,0 +1,6 @@
+- name: Home
+  link: index.html
+- name: Quotes
+  link: quotes.html
+- name: Links
+  link: links.html

@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Portal">Portal</a>
+</div>
+{% for item in site.data.quotes.videogame-quotes.portal %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>
+{% endfor %}

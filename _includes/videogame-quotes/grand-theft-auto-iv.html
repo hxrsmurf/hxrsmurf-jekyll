@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Grand Theft Auto IV">Grand Theft Auto IV</a>
+</div>
+{% for item in site.data.quotes.videogame-quotes.grand-theft-auto-iv %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>
+{% endfor %}

@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Daredevil">Daredevil</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.daredevil %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

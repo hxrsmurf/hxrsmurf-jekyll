@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Template">Template</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.template %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

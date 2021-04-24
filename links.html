@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h1>Links</h1>
+<p>
+
+    {% for item in site.data.links %}
+      <a href="{{ item.link}}" target="_blank"><img src="assets/images/links/{{item.image}}" width="112" height="113"></a>
+    {% endfor %}
+</p>

@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Band of Brothers">Band of Brothers</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.band-of-brothers %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>
+{% endfor %}

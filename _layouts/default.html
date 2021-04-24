@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    {% include navigation.html %}
+    <br>
+    {% include banner.html %}
+    <div id="page">
+      <div id="content">
+        <div class="post">
+          {{ content }}
+        </div>
+      </div>
+      <div id="sidebar2">
+
+        {% if page.url contains "/quotes_" %}
+        <div class="right-float">
+          {% include sidebar.html %}
+        </div>
+        {% else %}
+          {% include sidebar.html %}
+        {% endif %}
+
+      </div>
+    </div>
+    {% include footer.html %}    
+  </body>
+</html>

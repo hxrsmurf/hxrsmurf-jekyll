@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Mass Effect">Mass Effect</a>
+</div>
+{% for item in site.data.quotes.videogame-quotes.mass-effect %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>
+{% endfor %}

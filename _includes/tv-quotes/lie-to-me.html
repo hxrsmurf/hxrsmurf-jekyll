@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Lie to Me">Lie to Me</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.lie-to-me %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

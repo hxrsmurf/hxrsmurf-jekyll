@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Sense8">Sense8</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.sense8 %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

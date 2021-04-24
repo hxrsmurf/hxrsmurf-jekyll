@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="House of Cards">House of Cards</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.house-of-cards %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

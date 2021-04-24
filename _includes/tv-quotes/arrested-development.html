@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Arrested Development">Arrested Development</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.arrested-development %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>
+{% endfor %}

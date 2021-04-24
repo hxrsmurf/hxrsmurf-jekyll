@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="The League">The League</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.the-league %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

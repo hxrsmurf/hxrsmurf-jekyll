@@ -1,0 +1,14 @@
+- name: Book Quotes
+  link: quotes_books.html
+- name: Movie Quotes
+  link: quotes_movie.html
+- name: Music Quotes
+  link: quotes_music.html
+- name: People Quotes
+  link: quotes_people.html
+- name: TV Quotes
+  link: quotes_tv.html
+- name: Random Quotes
+  link: quotes_random.html
+- name: Video Game Quotes
+  link: quotes_videogames.html

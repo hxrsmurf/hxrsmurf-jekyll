@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Hemlock Grove">Hemlock Grove</a>
+</div>
+{% for item in site.data.quotes.tv-quotes.hemlock-grove %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

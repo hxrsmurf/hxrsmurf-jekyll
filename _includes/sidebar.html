@@ -1,0 +1,63 @@
+{% if page.url contains "/quotes_" %}
+
+{% else %}
+<li>
+    <h2>Announcements</h2>
+
+    {% for item in site.data.announcements %}
+     {{item.name}}
+    {% endfor %}
+</li>
+{% endif%}
+
+{% if page.url == "/quotes_tv.html" %}
+    <div id="sections">
+        <h2>Sections</h2>
+        <ul>
+        {% for item in site.data.quotes.tv %}
+            <li>
+                <a href="#{{ item.name }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+
+{% if page.url == "/quotes_videogames.html" %}
+    <div id="sections">
+        <h2>Sections</h2>
+        <ul>
+        {% for item in site.data.quotes.videogames %}
+            <li>
+                <a href="#{{ item.name }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+{% if page.url == "/quotes_music.html" %}
+    <div id="sections">
+        <h2>Sections</h2>
+        <ul>
+        {% for item in site.data.quotes.music %}
+            <li>
+                <a href="#{{ item.name }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+{% if page.url contains "/quotes" %}
+<br>
+<h2>Page Navigation</h2>
+<ul>
+    {% for item in site.data.quote-pages %}
+    <li>
+        <a href="{{ item.link }}">{{ item.name }}</a>
+    </li>
+</ul>
+{% endfor %}
+{% endif %}
