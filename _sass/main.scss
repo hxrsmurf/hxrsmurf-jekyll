@@ -100,6 +100,12 @@ body {
     border-bottom: 1px solid rgba(0,0,0,.07);
 }
 
+.post .top {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(0,0,0,.07);
+}
+
 .post .entry {
     padding: 0px 0px 20px 0px;
     padding-bottom: 0px;
@@ -118,30 +124,39 @@ body {
 
 // Sidebar
 
-#sidebar2 {
+#wrapper-sidebar {
     float: right;
     width: 250px;
+    height: 100%;
     padding: 40px 10px 20px 0px;
     list-style: none;
+    position: relative;
 }
 
-#sidebar2 .right-float{
-    position: fixed;
+#wrapper-sidebar .sidebar {
+    float: right;
+    width: 250px;
+    height: 100%;
+    
 }
 
-#sidebar2 ul {    
+#wrapper-sidebar .sidebar .right-float{
+    position: absolute;
+}
+
+#wrapper-sidebar .sidebar ul {    
     margin: 0;
     padding: 0;
     list-style: none;
 }
-#sidebar2 li {
+#wrapper-sidebar .sidebar li {
     border-bottom: 1px solid rgba(0,0,0,.07);
     margin: 0px 0px;
     padding: 10px 0px;
     border-left: none;
 }
 
-#sidebar2 a {
+#wrapper-sidebar .sidebar a {
     color: #3B3B3B;
     text-decoration: none;
 }

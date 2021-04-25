@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Linkin Park">Linkin Park</a>
+</div>
+{% for item in site.data.quotes.music-quotes.linkin-park %}
+    <p>
+       {{ item.lyric }}
+    </p>
+{% endfor %}
