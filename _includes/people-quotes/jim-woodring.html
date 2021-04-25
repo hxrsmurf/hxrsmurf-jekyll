@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Jim Woodring">Jim Woodring</a>
+</div>
+{% for item in site.data.quotes.people-quotes.jim-woodring %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

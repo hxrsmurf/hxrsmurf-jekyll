@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Pierre-Joseph Proudhon">Pierre-Joseph Proudhon</a>
+</div>
+{% for item in site.data.quotes.people-quotes.pierre-joseph-proudhon %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

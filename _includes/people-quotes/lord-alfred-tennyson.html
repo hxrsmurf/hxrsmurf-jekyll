@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Lord Alfred Tennyson">Lord Alfred Tennyson</a>
+</div>
+{% for item in site.data.quotes.people-quotes.lord-alfred-tennyson %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}
