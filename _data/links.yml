@@ -19,3 +19,6 @@
 - name: Twitch
   link: https://twitch.tv/hxrsmurf
   image: twitch.jpg
+- name: Github
+  link: https://github.com/hxrsmurf
+  image: github.jpg
