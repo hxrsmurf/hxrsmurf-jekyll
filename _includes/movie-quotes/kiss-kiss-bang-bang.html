@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Kiss Kiss Bang Bang">Kiss Kiss Bang Bang</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.kiss-kiss-bang-bang %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

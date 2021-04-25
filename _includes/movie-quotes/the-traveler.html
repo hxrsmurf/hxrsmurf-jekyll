@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="The Traveler">The Traveler</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.the-traveler %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

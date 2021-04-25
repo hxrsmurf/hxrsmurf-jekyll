@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="12 Angry Men">12 Angry Men</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.12-angry-men %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

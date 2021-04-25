@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Harry Potter">Harry Potter</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.harry-potter %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

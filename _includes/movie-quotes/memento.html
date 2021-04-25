@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Memento">Memento</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.memento %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

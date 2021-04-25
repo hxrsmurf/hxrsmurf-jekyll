@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="It's A Wonderful Life">It's A Wonderful Life</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.its-a-wonderful-life %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

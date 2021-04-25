@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="School of Life">School of Life</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.school-of-life %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

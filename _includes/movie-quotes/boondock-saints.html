@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Boondock Saints">Boondock Saints</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.boondock-saints %}
+    {% if item.person == nil %}    
+    <p>
+        {{ item.quote }}
+    </p>
+    {% else %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>
+    {% endif %}
+{% endfor %}

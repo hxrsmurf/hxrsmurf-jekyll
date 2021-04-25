@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="The Prestige">The Prestige</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.the-prestige %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

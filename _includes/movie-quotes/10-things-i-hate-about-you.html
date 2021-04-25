@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="10 Things I Hate About You">10 Things I Hate About You</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.10-things-i-hate-about-you %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Love Actually">Love Actually</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.love-actually %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}
