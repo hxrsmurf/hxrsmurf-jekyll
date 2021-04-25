@@ -13,7 +13,7 @@ $includesTemplateFile = "z-quote-template.html"
 $includesTemplate = $includesDirectory + $includesTemplateFile
 
 # Main HTML
-$preMainHTML = '<div class="quote"> <div class="quote"> {% include '
+$preMainHTML = '<div class="quote"> {% include '
 $appendMainHTML = " </div>"
 
 # Set This
@@ -37,6 +37,7 @@ foreach ($name in $categoryImport) {
 	$noSpaces = ($noSpaces.tolower()).replace("'","")
 	$noSpaces = ($noSpaces.tolower()).replace(".","")
 	$noSpaces = ($noSpaces.tolower()).replace(":","")
+	$noSpaces = ($noSpaces.tolower()).replace("!","")
 	$yamlSave = $noSpaces + ".yaml"
 	$htmlSave = $noSpaces + ".html"
 	$includesSave = $includesDirectory + "\" + $htmlSave
