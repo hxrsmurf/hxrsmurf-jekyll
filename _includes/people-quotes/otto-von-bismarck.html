@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Otto Von Bismarck">Otto Von Bismarck</a>
+</div>
+{% for item in site.data.quotes.people-quotes.otto-von-bismarck %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

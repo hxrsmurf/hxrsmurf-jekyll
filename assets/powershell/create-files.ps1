@@ -17,7 +17,7 @@ $preMainHTML = '<div class="quote"> {% include '
 $appendMainHTML = " %} </div>"
 
 # Set This
-$category = "movie"
+$category = "people"
 
 $categoryFile = $yamlDirectory + $category + "s.csv"
 $categoryFolder = $category + "-quotes"
@@ -25,14 +25,15 @@ $categoryFolder = $category + "-quotes"
 $yamlDirectory = $yamlDirectory + $categoryFolder
 $includesDirectory = $includesDirectory + $categoryFolder
 
- if (!(Test-Path $yamlDirectory)) { New-Item -Path $yamlDirectory } else { Write-Host "Content already exists!"; return }
- if (!(Test-Path $includesDirectory)) { New-Item -Path $includesDirectory } else { Write-Host "Content already exists!"; return }
+if (!(Test-Path $yamlDirectory)) { New-Item -Path $yamlDirectory -Type "Directory"} else { Write-Host "Content already exists!"; return }
+if (!(Test-Path $includesDirectory)) { New-Item -Path $includesDirectory -Type "Directory"} else { Write-Host "Content already exists!"; return }
 
 $categoryImport = (Import-CSV $categoryFile).name
 
 $template = Get-Content $includesTemplate
 
 foreach ($name in $categoryImport) {
+	# Probably could just do regex, but whatever.
 	$noSpaces = ($name.tolower()).replace(" ","-")
 	$noSpaces = ($noSpaces.tolower()).replace("'","")
 	$noSpaces = ($noSpaces.tolower()).replace(".","")

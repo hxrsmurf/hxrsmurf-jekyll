@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Wendell Phillips">Wendell Phillips</a>
+</div>
+{% for item in site.data.quotes.people-quotes.wendell-phillips %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

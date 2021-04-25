@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Abraham Lincoln">Abraham Lincoln</a>
+</div>
+{% for item in site.data.quotes.people-quotes.abraham-lincoln %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

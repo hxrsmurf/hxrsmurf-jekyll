@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Thomas Jefferson">Thomas Jefferson</a>
+</div>
+{% for item in site.data.quotes.people-quotes.thomas-jefferson %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

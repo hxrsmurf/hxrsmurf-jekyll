@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Nikos Kazantzakis">Nikos Kazantzakis</a>
+</div>
+{% for item in site.data.quotes.people-quotes.nikos-kazantzakis %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}

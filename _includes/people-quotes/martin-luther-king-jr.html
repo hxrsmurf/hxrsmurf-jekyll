@@ -1,0 +1,14 @@
+<div class="quote-title">
+    <a name="Martin Luther King Jr.">Martin Luther King Jr.</a>
+</div>
+{% for item in site.data.quotes.people-quotes.martin-luther-king-jr %}
+    {% if item.person == nil %}    
+        <p>
+            {{ item.quote }}
+        </p>
+    {% else %}
+        <p>
+            {{ item.person }} - {{ item.quote }}
+        </p>
+    {% endif %}
+{% endfor %}
