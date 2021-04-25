@@ -1,7 +1,6 @@
-
 <#
-
 	This creates the YAML, Includes, and main HTML for Jekyll.
+	To do: if content already exists, don't overwrite (but do it better)
 #>
 
 # Base Directories
@@ -19,19 +18,21 @@ $appendMainHTML = " </div>"
 
 # Set This
 $category = "movie"
+
 $categoryFile = $yamlDirectory + $category + "s.csv"
 $categoryFolder = $category + "-quotes"
 
 $yamlDirectory = $yamlDirectory + $categoryFolder
 $includesDirectory = $includesDirectory + $categoryFolder
 
-# if (!(Test-Path $categoryDirectory)){ mkdir $categoryDirectory }
+ if (!(Test-Path $yamlDirectory)) { New-Item -Path $yamlDirectory } else { Write-Host "Content already exists!"; return }
+ if (!(Test-Path $includesDirectory)) { New-Item -Path $includesDirectory } else { Write-Host "Content already exists!"; return }
 
 $categoryImport = (Import-CSV $categoryFile).name
 
 $template = Get-Content $includesTemplate
 
-foreach ($name in $categoryImport){
+foreach ($name in $categoryImport) {
 	$noSpaces = ($name.tolower()).replace(" ","-")
 	$noSpaces = ($noSpaces.tolower()).replace("'","")
 	$noSpaces = ($noSpaces.tolower()).replace(".","")
