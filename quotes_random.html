@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% for item in site.data.quotes.random-quotes.random-quotes %}
+<div class="quote" class="random">    
+    {% if item.author %}
+        <h4> {{ item.author }}</h4>
+    {% endif %}
+
+    <p>
+        {{ item.quote }}
+    </p>
+</div>
+{% endfor %}
