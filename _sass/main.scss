@@ -82,6 +82,22 @@ body {
     box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.03);
 }
 
+#top-button {
+    position: fixed;
+    bottom: 5px;
+    left: 45%;
+    cursor: pointer;
+}
+
+#top-button img {
+    max-width: 25%;
+    opacity: 15%;
+}
+
+#top-button img:hover {
+    opacity: 100%;
+}
+
 #content {
     float: left;
     width: 730px;
