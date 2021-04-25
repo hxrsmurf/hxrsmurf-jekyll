@@ -64,6 +64,18 @@
     </div>
 {% endif %}
 
+{% if page.url == "/quotes_movie.html" %}
+    <div id="sections">
+        <h2>Sections</h2>
+        <ul>
+        {% for item in site.data.quotes.movies %}
+            <li>
+                <a href="#{{ item.name }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
 
 {% if page.url contains "/quotes" %}
     <br>

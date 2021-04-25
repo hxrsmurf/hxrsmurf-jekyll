@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Howl's Moving Castle">Howl's Moving Castle</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.howls-moving-castle %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

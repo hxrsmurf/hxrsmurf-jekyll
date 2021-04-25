@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Pulp Fiction">Pulp Fiction</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.pulp-fiction %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

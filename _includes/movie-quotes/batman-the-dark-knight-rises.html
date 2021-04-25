@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Batman The Dark Knight Rises">Batman The Dark Knight Rises</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.batman-the-dark-knight-rises %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}

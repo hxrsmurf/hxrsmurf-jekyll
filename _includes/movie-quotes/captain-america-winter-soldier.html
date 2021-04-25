@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Captain America: Winter Soldier">Captain America: Winter Soldier</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.captain-america-winter-soldier %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}
