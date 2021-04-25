@@ -14,7 +14,7 @@ $includesTemplate = $includesDirectory + $includesTemplateFile
 
 # Main HTML
 $preMainHTML = '<div class="quote"> {% include '
-$appendMainHTML = " </div>"
+$appendMainHTML = " %} </div>"
 
 # Set This
 $category = "movie"
