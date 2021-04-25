@@ -1,0 +1,11 @@
+<div class="quote-title">
+    <a name="Catching Fire">Catching Fire</a>
+</div>
+
+{% for item in site.data.quotes.book-quotes.catching-fire %}
+    {% if item.person == nil %}
+        <p>{{ item.quote }}</p>
+    {% else %}
+        <p>{{ item.person }}: {{ item.quote }}</p>
+    {% endif %}
+{% endfor %}

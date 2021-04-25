@@ -51,6 +51,20 @@
 {% endif %}
 
 
+{% if page.url == "/quotes_books.html" %}
+    <div id="sections">
+        <h2>Sections</h2>
+        <ul>
+        {% for item in site.data.quotes.books %}
+            <li>
+                <a href="#{{ item.name }}">{{ item.name }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+
+
 {% if page.url contains "/quotes" %}
     <br>
     <h2>Page Navigation</h2>
