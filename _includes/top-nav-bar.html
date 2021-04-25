@@ -1,0 +1,7 @@
+{% if page.url contains "/quotes" %}
+<ul>
+    {% for item in site.data.quote-pages %}
+    <li> <a href="{{ item.link }}">{{ item.name }}</a> </li>
+    {% endfor %}
+</ul>
+{% endif %}
