@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Coldplay">Coldplay</a>
+</div>
+{% for item in site.data.quotes.music-quotes.coldplay %}
+    <p>
+       {{ item.lyric }}
+    </p>
+{% endfor %}

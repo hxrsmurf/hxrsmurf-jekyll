@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Twenty One Pilots">Twenty One Pilots</a>
+</div>
+{% for item in site.data.quotes.music-quotes.twenty-one-pilots %}
+    <p>
+       {{ item.lyric }}
+    </p>
+{% endfor %}

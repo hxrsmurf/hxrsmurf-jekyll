@@ -8,7 +8,7 @@
      {{item.name}}
     {% endfor %}
 </li>
-{% endif%}
+{% endif %}
 
 {% if page.url == "/quotes_tv.html" %}
     <div id="sections">
@@ -50,14 +50,13 @@
     </div>
 {% endif %}
 
+
 {% if page.url contains "/quotes" %}
-<br>
-<h2>Page Navigation</h2>
-<ul>
-    {% for item in site.data.quote-pages %}
-    <li>
-        <a href="{{ item.link }}">{{ item.name }}</a>
-    </li>
-</ul>
-{% endfor %}
+    <br>
+    <h2>Page Navigation</h2>
+    <ul>
+        {% for item in site.data.quote-pages %}
+		<li> <a href="{{ item.link }}">{{ item.name }}</a> </li>
+        {% endfor %}
+    </ul>
 {% endif %}

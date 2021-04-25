@@ -9,24 +9,28 @@
     {% include navigation.html %}
     <br>
     {% include banner.html %}
-    <div id="page">
-      <div id="content">
-        <div class="post">
-          {{ content }}
+    <div id="wrapper">
+      <div id="page">
+        <div id="content">
+          <div class="post">
+            {{ content }}
+          </div>
+        </div>
+        <div id="wrapper-sidebar">
+          <div class="sidebar">
+
+            {% if page.url contains "/quotes_" %}
+            <div class="right-float">
+              {% include sidebar.html %}
+            </div>
+            {% else %}
+              {% include sidebar.html %}
+            {% endif %}
+
+          </div>
         </div>
       </div>
-      <div id="sidebar2">
-
-        {% if page.url contains "/quotes_" %}
-        <div class="right-float">
-          {% include sidebar.html %}
-        </div>
-        {% else %}
-          {% include sidebar.html %}
-        {% endif %}
-
-      </div>
-    </div>
+  </div>
     {% include footer.html %}    
   </body>
 </html>

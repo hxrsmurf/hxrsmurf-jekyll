@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Fountains of Wayne">Fountains of Wayne</a>
+</div>
+{% for item in site.data.quotes.music-quotes.fountains-of-wayne %}
+    <p>
+       {{ item.lyric }}
+    </p>
+{% endfor %}
