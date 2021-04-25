@@ -1,0 +1,11 @@
+<div class="quote-title">
+    <a name="The Warp Series">The Warp Series</a>
+</div>
+
+{% for item in site.data.quotes.book-quotes.the-warp-series %}
+    {% if item.person == nil %}
+        <p>{{ item.quote }}</p>
+    {% else %}
+        <p>{{ item.person }}: {{ item.quote }}</p>
+    {% endif %}
+{% endfor %}

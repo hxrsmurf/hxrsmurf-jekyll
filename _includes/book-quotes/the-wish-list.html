@@ -1,0 +1,11 @@
+<div class="quote-title">
+    <a name="The Wish List">The Wish List</a>
+</div>
+
+{% for item in site.data.quotes.book-quotes.the-wish-list %}
+    {% if item.person == nil %}
+        <p>{{ item.quote }}</p>
+    {% else %}
+        <p>{{ item.person }}: {{ item.quote }}</p>
+    {% endif %}
+{% endfor %}

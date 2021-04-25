@@ -1,0 +1,11 @@
+<div class="quote-title">
+    <a name="The Hobbit">The Hobbit</a>
+</div>
+
+{% for item in site.data.quotes.book-quotes.the-hobbit %}
+    {% if item.person == nil %}
+        <p>{{ item.quote }}</p>
+    {% else %}
+        <p>{{ item.person }}: {{ item.quote }}</p>
+    {% endif %}
+{% endfor %}
