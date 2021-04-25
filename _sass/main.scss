@@ -126,6 +126,14 @@ body {
     padding-bottom: 5px;
 }
 
+// Grid
+
+#grid-container {
+    display: grid;
+    grid: 150px / auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
 // Sidebar
 
 #wrapper-sidebar {
