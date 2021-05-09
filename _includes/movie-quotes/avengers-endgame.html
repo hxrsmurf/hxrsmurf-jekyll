@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="Avenger's Endgame">Avenger's Endgame</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.avengers-endgame %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}
