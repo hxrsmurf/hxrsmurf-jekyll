@@ -1,0 +1,8 @@
+<div class="quote-title">
+    <a name="The Fast and The Furious - Tokyo Drift">The Fast and The Furious - Tokyo Drift</a>
+</div>
+{% for item in site.data.quotes.movie-quotes.the-fast-and-furious-tokyo-drift %}
+    <p>
+        {{ item.person }} - {{ item.quote }}
+    </p>    
+{% endfor %}
